@@ -10,12 +10,38 @@
     font-size: 24px;
     border-bottom: 1px solid #ededed;
     text-align: left;
+    position: relative;
 }
 
 .todoItem__text {
     margin-left: 15px;
 }
 
+.todoItem__text:hover {
+    cursor: pointer;
+}
+
 .todoItem__checkbox {
     transform: scale(2);
+}
+
+.todoItem__delete {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 30px;
+}
+
+.todoItem:hover .todoItem__delete {
+    display: block;
+}
+
+.todoItem__delete:after {
+    content: '×'
 }
