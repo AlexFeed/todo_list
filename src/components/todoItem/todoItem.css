@@ -1,0 +1,21 @@
+.todoItem {
+    list-style-type: none;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background: white;
+    outline: none;
+    box-sizing: border-box;
+    min-height: 50px;
+    font-size: 24px;
+    border-bottom: 1px solid #ededed;
+    text-align: left;
+}
+
+.todoItem__text {
+    margin-left: 15px;
+}
+
+.todoItem__checkbox {
+    transform: scale(2);
+}

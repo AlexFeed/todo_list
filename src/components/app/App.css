@@ -1,0 +1,78 @@
+.App__wrap {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.App {
+    max-width: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.App__title {
+    color: #29a7dc;
+    font-size: 70px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.todo {
+    margin-top: 15px
+}
+
+.todo__form {
+    position: relative;
+    text-align: left;
+}
+
+.todo__input {
+    width: 90%;
+    padding: 16px 10px;
+    border: none;
+    background: white;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+    outline: none;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 24px;
+}
+
+.todo__input:hover {
+    outline: none;
+}
+
+.todo__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    box-sizing: border-box;
+    height: 50px;
+    outline: none;
+    border: solid 1px #29a7dc;
+    background: #29a7dc;
+    cursor: pointer;
+    transition: all 60ms linear 50ms;
+    color: #fefefe;
+    line-height: 1;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.todo__btn:hover {
+    background: rgba(37, 154, 208, 0.94);
+}
+
+.todo__list {
+    max-width: 550px;
+    margin: 50px auto 0 auto;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
