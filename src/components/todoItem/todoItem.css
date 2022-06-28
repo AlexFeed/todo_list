@@ -45,3 +45,25 @@
 .todoItem__delete:after {
     content: '×'
 }
+
+.edit__input {
+    width: 100%;
+    padding: 16px 10px;
+    border: none;
+    background: white;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+    outline: none;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 24px;
+}
+
+@keyframes labelAnimation {
+    from { text-decoration-color: transparent; }
+    to { text-decoration-color: auto; }
+}
+
+.labelAnimation {
+    text-decoration: line-through;
+    animation: labelAnimation 0.4s linear;
+}
