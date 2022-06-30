@@ -85,21 +85,36 @@
 }
 
 .filter__item {
-    font-size: 16px;
+    font-size: 15px;
     padding: 6px;
     display: block;
     width: 110px;
     border-radius: 5px;
     border: none;
     font-family: 'Source Sans Pro', sans-serif;
+    background: white;
+    box-sizing: border-box;
 }
 
 .filter__item:hover {
-    border: 2px rgba(41, 167, 220, 0.49) solid;
+    border: 2px #29a7dc solid;
 }
 
 .activeFilter {
     border: 2px #29a7dc solid;
+}
+
+@media (max-width: 550px) {
+    .filter__item {
+        width: 33.3%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 430px) {
+    .todo__input {
+        font-size: 18px;
+    }
 }
 
 
