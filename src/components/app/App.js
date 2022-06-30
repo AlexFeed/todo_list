@@ -49,15 +49,16 @@ function App() {
     }
 
     const changeTodoItemText = (id, editedText) => {
-        const newTodoList = data.map(todoItem => {
-            if (todoItem.id === id) {
-                return {...todoItem, text: editedText}
-            } else {
-                return todoItem
-            }
-        })
-
-        setData(newTodoList);
+        if (editedText && editedText !== '') {
+            const newTodoList = data.map(todoItem => {
+                if (todoItem.id === id) {
+                    return {...todoItem, text: editedText}
+                } else {
+                    return todoItem
+                }
+            })
+            setData(newTodoList);
+        }
     }
 
     const onEnterDown = (e) => {

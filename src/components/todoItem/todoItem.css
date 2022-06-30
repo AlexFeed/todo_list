@@ -1,4 +1,6 @@
 .todoItem {
+    display: flex;
+    align-items: center;
     list-style-type: none;
     width: 100%;
     padding: 16px;
@@ -11,6 +13,7 @@
     border-bottom: 1px solid #ededed;
     text-align: left;
     position: relative;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .todoItem__text {
@@ -21,8 +24,9 @@
     cursor: pointer;
 }
 
-.todoItem__checkbox {
-    transform: scale(2);
+.todoItem__checkbox  {
+    font-size: 30px;
+    margin: 0 !important;
 }
 
 .todoItem__delete {
@@ -59,11 +63,18 @@
 }
 
 @keyframes labelAnimation {
-    from { text-decoration-color: transparent; }
-    to { text-decoration-color: auto; }
+    from {
+        text-decoration-color: transparent;
+        opacity: 1;
+    }
+    to {
+        text-decoration-color: auto;
+        opacity: 0.5;
+    }
 }
 
 .labelAnimation {
     text-decoration: line-through;
-    animation: labelAnimation 0.4s linear;
+    animation: labelAnimation 0.2s linear;
+    opacity: 0.5;
 }

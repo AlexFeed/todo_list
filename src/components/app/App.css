@@ -35,6 +35,7 @@
     box-sizing: border-box;
     height: 50px;
     font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .todo__input:hover {
@@ -84,12 +85,13 @@
 }
 
 .filter__item {
-    font-size: 14px;
+    font-size: 16px;
     padding: 6px;
     display: block;
-    width: 100px;
+    width: 110px;
     border-radius: 5px;
     border: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .filter__item:hover {
