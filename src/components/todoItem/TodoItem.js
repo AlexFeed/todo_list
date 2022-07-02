@@ -52,7 +52,7 @@ const TodoItem = ({text, isCompleted, id, onCheckboxChanged, handleDelete, chang
         <>
             <Checkbox checked={isCompleted}
                       onChange={() => onCheckboxChanged(id)}
-                      className="todoItem__checkbox" animation="smooth" shape={'round'}
+                      className="todoItem__checkbox no_highlights" animation="smooth" shape={'round'}
                       icon={<img src={checkboxImg} alt="check mark"/>}/>
             <label onClick={onEditModeSwitchedOn}
                    className={`todoItem__text ${isCompleted ? 'labelAnimation' : ''}`}>{text}</label>
